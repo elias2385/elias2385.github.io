@@ -42,6 +42,7 @@
   <p> You know the vibez! Im vonteonekay upcomming car youtuber. </p>
   <input id="Name" placeholder="Your name">
   <input type="email" id="Email" placeholder="Your email">
+  <input type="state" id="State" placeholder="Your state">
   <input type="submit" id="submit"> 
   <script type="module">
     // Import the functions you need from the SDKs you need
@@ -69,6 +70,7 @@
     const db = getDatabase(app);
 const Name = document.querySelector("#Name") 
 const Email = document.querySelector("#Email")
+const State = document.querySelector("#State")
 document.querySelector('#submit').addEventListener('click', Submit)
 
 	
@@ -78,10 +80,12 @@ function Submit() {
   set(ref(db, timestamp), {
 	  Name: Name.value,
       email: Email.value,
+	    State: State.value,
   });
 
   Name.value = ""
   Email.value = ""
+  State.value = ""
 }
 
 
