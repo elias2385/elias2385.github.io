@@ -80,6 +80,9 @@ small {
 .dessert{
   background-image: url("https://th.bing.com/th/id/OIP.V3vZ0G2aA5trlsUXZQUCQQAAAA?rs=1&pid=ImgDetMain");
 }
+.Last{
+  background-image: url("https://i.pinimg.com/736x/17/8b/dc/178bdc078d2bb1caca19fd28f4f13ef6.jpg");
+}
 .price {
   float: right;
 }
@@ -113,12 +116,14 @@ small {
 <body>
 <h1>Ferrari Resturant</h1>
 <h2>A fast and luxurious Special</h2>
+
 <div class="first">
 	<input class="quantities" type="number" min="0" style="width: 50px"> 
   <p>Pizza from Italy <span class="price">$7.50</span><br />
   <small>Pizza is an Italian dish typically consisting of a flat base of leavened wheat-based dough topped with tomato, cheese, and other ingredients, baked at a high temperature, traditionally in a wood-fired oven. </small></p>
 
 </div>
+
 <div class="second">
 	<input class="quantities" type="number" min="0" style="width: 50px"> 
   <p>Golden Tomahawk Steak <span class="price">$150.99</span><br />
@@ -130,6 +135,14 @@ small {
   <p>Fried chicken <span class="price">$25.99</span><br />
   <small>The secret to making the greatest fried chicken is all in the preparation. The key is to season and brine the chicken well before frying, which will help ensure that it comes out moist and tender. Choose a good quality whole chicken that have not been frozen prior to cooking.</small></p>
 </div>
+
+<div class="Last">
+	<input class="quantities" type="number" min="0" style="width: 50px"> 
+  <p>Vanilla Milkshake <span class="price">$6.99</span><br />
+  <small>Use high-quality vanilla bean ice cream, whole milk, a splash of pure vanilla extract, and blend briefly for a rich, creamy texture.</small></p>
+</div>
+
+
 
 <br><br> 
   <input id="Name" placeholder="Your name">
@@ -173,7 +186,7 @@ small {
   const Name = document.querySelector("#Name") 
   const Email = document.querySelector("#Email")
   const quantities = document.querySelectorAll(".quantities") 
-  const itemsList = ["Pizza from Italy", "Golden Tomahawk Steak", "Fried chicken"]
+  const itemsList = ["Pizza from Italy", "Golden Tomahawk Steak", "Fried chicken", "Vanilla Milkshake"]
   const prices = document.querySelectorAll(".price")
   document.querySelector('#submit').addEventListener('click', Submit)
 
